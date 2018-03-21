@@ -1,0 +1,58 @@
+package cn.itcast_02;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+
+/** 
+* @author 作者 E-mail: 
+* @version 创建时间：2018年3月20日 下午7:56:44 
+* 类说明 
+*/
+public class PhoneDemo {
+	public static void main(String[] args) {
+		Phone p = new IPhone();
+		p.call();
+		System.out.println("-----");
+		
+		//我想在接电话前，听彩铃
+		PhoneDecorate  pd = new RingPhoneDecorate(p);
+		pd.call();
+		System.out.println("----");
+		
+		//需求：在接电话后听音乐
+		pd = new MusicPhoneDecorate(p);
+		pd.call();
+		System.out.println("----");
+		
+		//需求：我要想手机在接前听彩铃，接后听音乐
+		//自己提供一个装饰类，在接电话前听彩铃，接电话后ing音乐
+		
+		pd = new RingPhoneDecorate(new MusicPhoneDecorate(p) );
+		pd.call();
+		
+		System.out.println("-----");
+		
+		//在IO中的使用
+		//Inputstream  is = System.in;
+		//InputStreamReader isr = new InputStreamreader(is)
+		//BufferedReader br = new BufferedReader(isr)
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		
+		BufferedWriter bw = new BufferedWriter((new OutputStreamWriter(System.out)));
+		
+		Scanner sc = new Scanner(System.in);
+	}
+
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,59 @@
+package cn.itcast_02;
+
+import java.lang.reflect.Constructor;
+
+/** 
+* @author 作者 E-mail: 
+* @version 创建时间：2018年3月19日 下午4:22:58 
+* 类说明
+*  
+* 通过反射获取构造方法并使用
+* public Constructor<?>[] getConstructors()
+* 返回一个Constructor数组
+*返回一个 Constructor 对象，它反映此 Class 对象所表示的类的指定公共构造方法。
+*public Constructor<?>[] getDeclaredConstructors()
+*此类所有已声明的构造方法的 Constructor 对象的数组
+*
+*
+*/
+public class ReflectDemo {
+	public static void main(String[] args) throws ClassNotFoundException {
+		//获取字节码文件对象
+		Class c = Class.forName("cn.itcast_01.Person");
+		
+		//获取构造方法
+		//public Constructor<?>[] getConstructors()
+		//返回一个Constructor数组
+		//返回一个 Constructor 对象，它反映此 Class 对象所表示的类的指定公共构造方法。
+//		Constructor[] cons = c.getConstructors();
+//		//增强for遍历
+//		for(Constructor con : cons){
+//			System.out.println(con);
+//		}
+		
+		//public Constructor<?>[] getDeclaredConstructors()
+		//此类所有已声明的构造方法的 Constructor 对象的数组
+		Constructor[] cons = c.getDeclaredConstructors();
+		for(Constructor con : cons){
+			System.out.println(con);
+		}
+		
+		
+		
+		
+		
+		
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+

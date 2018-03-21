@@ -1,0 +1,27 @@
+package cn.itcast_08;
+
+import java.net.Socket;
+
+/** 
+* @author 作者 E-mail: 
+* @version 创建时间：2018年3月18日 下午9:15:49 
+* 类说明 
+*/
+public class ServerDemo {
+	public static void main(String[] args) {
+		
+		ServerSocket ss = new ServerSocket(12345);
+		
+		Socket s = ss.accpt();
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(
+				s.getInputStream()));
+		
+		String line = null;
+		while((line = br.readerLine()) != null){
+			System.out.println(line);
+		}
+		s.close();
+	}
+	
+}

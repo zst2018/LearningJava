@@ -1,0 +1,27 @@
+package cn.itcast_02;
+/** 
+* @author 作者 E-mail: 
+* @version 创建时间：2018年3月19日 下午4:22:58 
+* 类说明
+*  
+* 通过反射获取构造方法并使用
+* 
+*/
+public class ReflectDemo {
+	public static void main(String[] args) {
+		//获取字节码文件对象
+		Class c = Class.forName("cn.itcast_01.Person");
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+

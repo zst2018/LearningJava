@@ -1,0 +1,22 @@
+package cn.itcast_05;
+
+import java.net.DatagramSocket;
+
+/** 
+* @author 作者 E-mail: 
+* @version 创建时间：2018年3月18日 下午4:48:41 
+* 类说明 
+*/
+public class SendThread implements Runnable {
+	private DatagramSocket ds ;
+	public SendThread(DatagramSocket ds){
+		this.DatagramSocket = DatagramSocket;
+	}
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

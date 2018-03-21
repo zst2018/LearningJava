@@ -1,0 +1,48 @@
+package cn.itcast_01;
+/** 
+* @author 作者 E-mail: 
+* @version 创建时间：2018年3月19日 下午3:50:33 
+* 类说明 
+*/
+public class Person {
+	private String name;
+	int age;
+	public String address;
+	public Person(){}
+	
+	Person(String name, int age){
+		this.name = name;
+		this.age = age;
+	}
+	public Person(String name,int age,String address){
+		this.name = name;
+		this.age = age;
+		this.address = address;
+	}
+	
+	public void show(){
+		System.out.println("show");
+	}
+	
+	public void method(String s ){
+		System.out.println("method"+s);
+		
+	}
+	public String getString(String s,int i){
+		return s + "---"+i;
+	}
+	
+	private void function(){
+		System.out.println("function");
+	}
+
+}
+
+
+
+
+
+
+
+
+

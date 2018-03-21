@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract method &apos;public static void sum(int a, int b)&apos; from &apos;cn.itcast_01.ArgsDemo.main()&apos; to &apos;cn.itcast_01.ArgsDemo&apos;&#x0D;&#x0A;- Original project: &apos;day16_jdk5news&apos;&#x0D;&#x0A;- Method name: &apos;sum&apos;&#x0D;&#x0A;- Destination type: &apos;cn.itcast_01.ArgsDemo&apos;&#x0D;&#x0A;- Declared visibility: &apos;public&apos;" comments="false" description="Extract method &apos;sum&apos;" destination="0" exceptions="false" flags="786434" id="org.eclipse.jdt.ui.extract.method" input="/src&lt;cn.itcast_01{ArgsDemo.java" name="sum" replace="false" selection="210 17" stamp="1517634219610" version="1.0" visibility="1"/>
+</session>

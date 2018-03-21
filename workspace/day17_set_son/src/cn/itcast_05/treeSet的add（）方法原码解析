@@ -1,0 +1,82 @@
+interface Collection{...}
+
+interface Set extends Collection{...}
+interface NavigableMap{}
+class treeMap implements NavigableMap{
+	public V put(K key,V value){
+	if(t==null){
+		compare(key,key);
+		
+		root = new Entry<>(key,value,null);
+		size=1;
+		modCount++;
+		return null;
+	
+	}
+	int cmp;
+	Entry<K,V> parent;
+	Comparator<? super K> cpr = comparator;
+	if(apr ! = null){
+		do{
+			parent = t;
+			cmp = cpr.compare(key,t.key);
+			if(cmp<0){
+				t = t.left;
+			}else if(cmp>0){
+				t - t.right;
+			}else{
+				return t.setValue(value);
+			}
+			while(t! = null);
+			
+		}else {
+			if(key == null){
+				throw new NullPointerException();
+				
+			}
+			Comparable<? super K> k = (Comparable<? super K>) key;
+			do{
+				if(cmp<0){
+					t = t.left;
+				}else if(cmp>0){
+					t - t.right;
+				}else{
+					return t.setValue(value);
+				}while(t! = null);
+			
+			}
+			Entry<K.V> e = new Entry<>(key,value,parent);
+			if(cmp<0){
+				parent.left = e;
+			}else{
+				parent.right=e;
+			}
+			fixAfterInsertion(e);
+			size++;
+			modCount++;
+			erturn null;
+		}
+	
+	}
+	
+	
+	
+	
+	}
+
+}
+class treeSet implements Set{
+	private transient NavigableMap<E,Object> m;
+	
+	
+	public TreeSet(){
+		this(new treeMap<E,Object>());
+	}
+	public Boolean  add(E e){
+		return m.put(e.PRESENT)==null;
+	}
+	
+
+}
+真正的比较是依赖于元素的comparaTo()方法，这个方法定义在Comparable 里面
+如果要重写该方法，。就要先实现Comparable 接口，这个接口表示自然排序

@@ -1,0 +1,35 @@
+多态的问题理解
+class 孔子爹{
+	public int age=50;
+	public void teach(){
+	System.out.println("讲解java 基础");
+	}
+}
+class 孔子 extends 孔子爹{
+	public int age=23;
+	public void teach(){
+	System.out.println("讲解论语");
+
+	}
+	public void playGame(){
+	System.out.println("打松鼠");
+	}
+}
+
+//java 培训特别火，很多人来请孔子爹去讲课，这一天孔子爹被请走了
+//但是，还有人来请，就剩孔子在家，价格还挺高，孔子一想，我是不是可以去呢
+//然后就穿上爹的衣服，带上爹的眼睛，粘上爹的胡子，就开始装爹
+//向上转型
+孔子爹  K爹 = new 孔子（）；
+System.out.println(k爹.age);//40
+K爹.teach();  //讲解论语
+//K爹.playGame();    //这是儿子才能做的，孔子爹做不了
+
+
+//讲完了，下班回家
+//就脱下爹的装备，换下自己的装备
+//向下转型
+孔子 K = （孔子）K爹；
+System.out.println(k.age);//  20
+k.teach();    //讲解论语
+k.playGame();   //打松鼠

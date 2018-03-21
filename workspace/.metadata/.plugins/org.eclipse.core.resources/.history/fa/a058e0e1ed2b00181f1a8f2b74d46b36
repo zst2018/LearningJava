@@ -1,0 +1,30 @@
+package cn.itcast.test;
+
+import java.lang.reflect.Field;
+
+/** 
+* @author 作者 E-mail: 
+* @version 创建时间：2018年3月20日 上午11:17:51 
+* 类说明 
+*/
+public class Tool {
+	public void setProperty(Object obj,String propertyName,Object value) throws Exception{
+		Class c=obj.getClass();
+		
+		Field fields = c.getDeclaredField(propertyName);
+		
+		
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+

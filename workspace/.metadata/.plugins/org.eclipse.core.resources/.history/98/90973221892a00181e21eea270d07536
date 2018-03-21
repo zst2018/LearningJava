@@ -1,0 +1,12 @@
+package cn.itcast_05;
+
+import org.omg.PortableServer.THREAD_POLICY_ID;
+
+/** 
+* @author 作者 E-mail: 
+* @version 创建时间：2018年3月18日 下午4:48:21 
+* 类说明 
+*/
+public class SendThread implements THREAD_POLICY_ID {
+
+}

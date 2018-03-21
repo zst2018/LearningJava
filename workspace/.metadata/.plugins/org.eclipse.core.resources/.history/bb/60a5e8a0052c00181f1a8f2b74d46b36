@@ -1,0 +1,9 @@
+package cn.itcast_05;
+/** 
+* @author 作者 E-mail: 
+* @version 创建时间：2018年3月20日 下午2:10:43 
+* 类说明 
+*/
+public interface UserDao {
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;cn.itcast_04.ObjectTolle.java&apos; to &apos;ObjectTool.java&apos;&#x0D;&#x0A;- Original project: &apos;day16_generic&apos;&#x0D;&#x0A;- Original element: &apos;cn.itcast_04.ObjectTolle.java&apos;&#x0D;&#x0A;- Renamed element: &apos;cn.itcast_04.ObjectTool.java&apos;" description="Rename compilation unit &apos;ObjectTolle.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;cn.itcast_04{ObjectTolle.java" name="ObjectTool.java" references="false" stamp="1517573319193" version="1.0"/>
+</session>

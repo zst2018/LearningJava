@@ -1,0 +1,18 @@
+package cn.itcast_03;
+/** 
+* @author 作者 E-mail: 
+* @version 创建时间：2018年3月16日 下午3:32:49 
+* 类说明 
+*/
+public class Student {
+	//构造方法私有
+	//目的是不让外界创造对象
+	private Student(){}
+	//自己造有个
+	Student s = new Student();
+	
+	//提供公共的访问方式
+	public Student getStudent(){
+		return s;
+	}
+}

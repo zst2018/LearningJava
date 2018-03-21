@@ -1,0 +1,23 @@
+package cn.itcast_02;
+
+import java.awt.Frame;
+
+/** 
+* @author 作者 E-mail: 
+* @version 创建时间：2018年3月16日 下午7:39:01 
+* 类说明 
+*/
+public class FrameDemo {
+	public static void main(String[] args) {
+		//创建窗体
+		Frame f = new Frame("窗体关闭案例");
+		
+		//设置窗体属性
+		f.setBounds(400,200,400,300);
+		
+		//设置窗体可见
+		f.setVisible(true);
+		
+	}
+
+}

@@ -1,0 +1,21 @@
+package cn.itcast_15;
+
+import java.net.Socket;
+
+/** 
+* @author 作者 E-mail: 
+* @version 创建时间：2018年3月19日 上午10:55:07 
+* 类说明 
+*/
+public class UserThread implements Runnable {
+	private Socket s ;
+	public UserThread(Socket s){
+		this.s = s;
+	}
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,21 @@
+
+
+package cn.itcast_09;
+/** 
+* @author 作者 E-mail: 
+* @version 创建时间：2018年3月18日 下午9:26:21 
+* 类说明 
+*/
+public class ClientDemo {
+	public static void main(String[] args) {
+		Socket s = new Socket("192.168.0.100",12345);
+		
+		//封装文件
+		BufferedReader br = new BufferedReader(new FileReader(
+				"InetAddressDemo.java"));
+		
+		
+		
+	}
+
+}

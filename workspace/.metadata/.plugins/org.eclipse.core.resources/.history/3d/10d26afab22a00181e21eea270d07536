@@ -1,0 +1,38 @@
+
+
+package cn.itcast_09;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.OutputStreamWriter;
+import java.net.Socket;
+
+/** 
+* @author 作者 E-mail: 
+* @version 创建时间：2018年3月18日 下午9:26:21 
+* 类说明 
+*/
+public class ClientDemo {
+	public static void main(String[] args) throws IOException {
+		Socket s = new Socket("192.168.0.100",12345);
+		
+		//封装文件
+		BufferedReader br = new BufferedReader(new FileReader(
+				"cn\\itcast_01\\InetAddressDemo.java"));
+		
+		//封装通道内的流
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(
+				s.getOutputStream()));
+		
+		String line = null;
+		while((line = br.readLine()) != null){
+			bw.write(line);
+			bw.newLine();
+			bw.flush();
+		}
+		s.close();
+	}
+
+}

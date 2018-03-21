@@ -1,0 +1,43 @@
+package cn.itcast_01;
+
+import java.io.BufferedInputStream;
+import java.io.BufferedOutputStream;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+/** 
+* @author 作者 E-mail: 
+* @version 创建时间：2018年3月20日 下午4:00:59 
+* 类说明 
+*需求：计算出一段代码的运行时间
+*/
+public class GetTime {
+	public long getTime() throws IOException{
+		long start = System.currentTimeMillis();
+		//for循环
+//		for(int x = 0 ;x<10000;x++){
+//			System.out.println(x);
+//		}
+		
+		//视频的时间
+		BufferedInputStream bis = new BufferedInputStream(
+				new FileInputStream("a.avi"));
+		BufferedOutputStream bos = new BufferedOutputStream(
+				new FileOutputStream("b.avi"));
+		
+		byte[] bys = new byte[1024];
+		int len = 0 ;
+		while((len = bis.read(bys)) != -1){
+			bos.write(bys,0,len);
+		}
+		bos.close();
+		bis.close();
+		
+		
+		long end = System.currentTimeMillis();
+		return end - start;
+		
+	}
+
+}

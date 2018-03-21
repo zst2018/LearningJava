@@ -1,0 +1,9 @@
+package cn.itcast_04;
+/** 
+* @author 作者 E-mail: 
+* @version 创建时间：2018年3月21日 下午7:58:13 
+* 类说明 
+*/
+public interface Inter {
+
+}

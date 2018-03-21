@@ -1,0 +1,19 @@
+package cn.itcast_07;
+
+import java.awt.Frame;
+
+/** 
+* @author 作者 E-mail: 
+* @version 创建时间：2018年3月17日 下午3:45:03 
+* 类说明 
+*/
+public class FrameDemo {
+	public static void main(String[] args) {
+		
+		//创建窗体对象并设置属性
+		Frame f = new Frame("不能输入非数字字符");
+		f.setBounds(400,200,400,300);
+		
+	}
+
+}

@@ -1,0 +1,23 @@
+package cn.itcast_02;
+
+import java.net.DatagramSocket;
+import java.net.SocketException;
+
+/** 
+* @author 作者 E-mail: 
+* @version 创建时间：2018年3月18日 上午9:08:24 
+* 类说明 
+* UDP协议发送数据：
+* A 创建发送端的socket对象
+* B 创建数据并把数据打包
+* C 调用socket对象的发送方法发送数据包
+* D 释放资源
+*/
+public class SendDemo {
+	public static void main(String[] args) throws SocketException {
+		//创建发送端的socket对象
+		DatagramSocket ds = new DatagramSocket();
+		
+	}
+
+}

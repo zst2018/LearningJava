@@ -1,0 +1,26 @@
+package cn.itcast_03;
+
+import java.io.IOException;
+
+/** 
+* @author 作者 E-mail: 
+* @version 创建时间：2018年3月16日 下午4:18:31 
+* 类说明 
+*/
+public class RunTimeDemo {
+	public static void main(String[] args) throws IOException {
+		Runtime r = Runtime.getRuntime();
+		r.exec("winmine");
+	}
+}
+
+/*
+ * public class Runtime {
+ *	private Runtime(){}
+ * 	private static Runtime currentRuntime = new Runtime(); 
+ * 	public static Runtime getRuntime(){
+ * 		return currentRuntime;
+ * 	}
+ * }
+ * */
+ 

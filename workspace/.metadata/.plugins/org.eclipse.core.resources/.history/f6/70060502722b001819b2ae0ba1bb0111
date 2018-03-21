@@ -1,0 +1,25 @@
+package cn.itcast_04;
+
+import java.lang.reflect.Method;
+
+/** 
+* @author 作者 E-mail: 
+* @version 创建时间：2018年3月19日 下午8:24:18 
+* 类说明 
+*/
+public class ReflectDemo {
+	public static void main(String[] args) throws Exception {
+		
+		//获取字节码文件对象
+		Class c = Class.forName("cn.itcast_01.Person");
+		
+		//获取所有的方法
+		Method[] methods = c.getMethods();
+		
+		for(Method method : methods){
+			System.out.println(method);
+		}
+		
+	}
+	
+}
